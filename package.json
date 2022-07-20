@@ -25,7 +25,9 @@
     "egg": "^2.6.1",
     "egg-mongoose": "^3.3.1",
     "egg-router-plus": "^2.0.0",
-    "egg-scripts": "^2.6.0"
+    "egg-scripts": "^2.6.0",
+    "joi": "^17.6.0",
+    "mongoose-paginate-v2": "^1.7.0"
   },
   "devDependencies": {
     "@eggjs/tsconfig": "^1.0.0",

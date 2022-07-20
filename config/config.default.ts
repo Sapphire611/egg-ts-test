@@ -2,7 +2,7 @@
  * @Author: Sapphire Liu
  * @Date: 2022-07-14 11:14:29
  * @LastEditors: Sapphire Liu
- * @LastEditTime: 2022-07-15 13:42:28
+ * @LastEditTime: 2022-07-19 16:30:15
  * @Description: default config for egg.js...
  */
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
@@ -15,7 +15,8 @@ export default (appInfo: EggAppInfo) => {
   config.keys = appInfo.name + '_1657768449273_3636';
 
   // add your egg config in here
-  config.middleware = [];
+  // eslint-disable-next-line array-bracket-spacing
+  config.middleware = ['validator'];
 
   // add your special config in here
   const bizConfig = {
@@ -25,7 +26,7 @@ export default (appInfo: EggAppInfo) => {
   // config for mongoose
   config.mongoose = {
     client: {
-      url: 'mongodb://127.0.0.1:27017/',
+      url: 'db: mongodb://172.16.10.58:27017/s365-health',
       options: {
         useNewUrlParser: true,
         useUnifiedTopology: true,
